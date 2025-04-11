@@ -1,1 +1,1 @@
-# Exetension-auto-ref-Layer3-Pods-Zora-Mint
+# Extension-auto-ref-Layer3-Pods-Zora-Mint
