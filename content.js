@@ -1,6 +1,6 @@
 // Fonction pour ajouter ou remplacer les paramètres ref, referrer, et invite dans l'URL
 function addOrReplaceParams() {
-  const newRefParam = "0x7f7ACA6Ba43602a87A7919aB990a8CDd885DB9c0";  // Adresse commune pour ref et referrer
+  const newRefParam = "0x7f7ACA6Ba43602a87A7919aB990a8CDd885DB9c0";  // Adresse commune pour ref, referrer et invite
 
   const url = new URL(window.location.href);
 
