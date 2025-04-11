@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Layer3 Ref Appender, Pods, Zora, and Mint Referrer",
+  "version": "1.5",
+  "description": "Ajoute ou remplace les paramètres ref, referrer et invite sur app.layer3.xyz, pods.media, zora.co et mint.boost.xyz",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.layer3.xyz/*",
+        "https://pods.media/*",
+        "https://zora.co/*",
+        "https://mint.boost.xyz/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
