@@ -1,7 +1,6 @@
 // Fonction pour ajouter ou remplacer les paramètres ref, referrer, et invite dans l'URL
 function addOrReplaceParams() {
   const newRefParam = "0x7f7ACA6Ba43602a87A7919aB990a8CDd885DB9c0";  // Adresse commune pour ref et referrer
-  const newInviteParam = "0x7f7ACA6Ba43602a87A7919aB990a8CDd885DB9c0";  // Adresse pour invite
 
   const url = new URL(window.location.href);
 
@@ -41,11 +40,11 @@ function addOrReplaceParams() {
   // Remplacer ou ajouter le paramètre invite pour mint.boost.xyz
   if (url.hostname.includes("mint.boost.xyz")) {
     if (url.searchParams.has("invite")) {
-      url.searchParams.set("invite", newInviteParam);  // Remplacer l'adresse actuelle
-      console.log("Paramètre invite remplacé par : " + newInviteParam);
+      url.searchParams.set("invite", newRefParam);  // Remplacer l'adresse actuelle
+      console.log("Paramètre invite remplacé par : " + newRefParam);
     } else {
-      url.searchParams.append("invite", newInviteParam);  // Ajouter le paramètre invite s'il n'existe pas
-      console.log("Paramètre invite ajouté avec : " + newInviteParam);
+      url.searchParams.append("invite", newRefParam);  // Ajouter le paramètre invite s'il n'existe pas
+      console.log("Paramètre invite ajouté avec : " + newRefParam);
     }
   }
 
